@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<style>
+body{
+background:#2a5298;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:sans-serif;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:400px;
+text-align:center;
+}
+
+.cg{font-size:35px;margin:10px;}
+
+ul{text-align:left;}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Prediction Result</h2>
+
+<p>Next Semester SGPA</p>
+<div class="cg">{{ sgpa }}</div>
+
+<p>Overall performance</p>
+<div class="cg">{{ cgpa }}</div>
+
+<p><b>Grade:</b> {{ grade }}</p>
+<p><b>Performance:</b> {{ performance }}</p>
+
+<p><b>Status:</b> {{ backlog_message }}</p>
+<p><b>Note:</b> {{ first_sem_message }}</p>
+
+<h3>Suggestions</h3>
+<ul>
+{% for s in suggestions %}
+<li>{{ s }}</li>
+{% endfor %}
+</ul>
+
+<a href="/">Go Back</a>
+
+</div>
+
+</body>
+</html>

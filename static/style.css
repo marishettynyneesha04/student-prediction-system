@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.main-title {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Icons */
+.icon {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+/* Inputs */
+.custom-input {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 10px #ffd700;
+    border-color: #ffd700;
+}
+
+/* Button */
+.predict-btn {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.4s;
+    color: white;
+}
+
+.predict-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
